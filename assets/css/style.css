@@ -1,4 +1,5 @@
 /*#fff4df-лавандовый цвет*/
+/*#85bd87-фисташковый*/
 
 /*GENERAL-SETTINGS*/
 
@@ -53,7 +54,7 @@ a {
 #header .logo p {
     font-weight: 600;
     font-size: 34px;
-    color: #8ccb5e;
+    color: #85bd87;
     margin: 0;
 }
 
@@ -131,7 +132,7 @@ a {
 }
 
 #header .content .title span{
-    border-bottom: 1px solid #8ccb5e;
+    border-bottom: 1px solid #85bd87;
 }
 
 
@@ -144,7 +145,7 @@ a {
     width: 250px;
     border: 1px solid #8d8888;
     padding: 12px;
-    background-color: #8ccb5e;
+    background-color: #85bd87;
     border-radius: 25px
 }
 
