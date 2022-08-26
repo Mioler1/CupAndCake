@@ -1,11 +1,16 @@
-/*#fff4df-лавандовый цвет*/
-/*#85bd87-фисташковый*/
+/*-----------------------COLOR------------------------------------*/
+/*#fff4df-бежевый цвет*/
+/*#87a96b-фисташковый*/
+/*#968da7-лавандовый/*
 
-/*GENERAL-SETTINGS*/
+
+/*--------------------GENERAL-SETTINGS--------------------*/
 
 html,
 body {
-    height: 100%;
+    background-color: #fff4df;
+    overflow-y: scroll;
+    scrollbar-width: unset;
 }
 
 body {
@@ -25,39 +30,32 @@ a {
     color: #4F4C67;
 }
 
+p.title_for_section {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+
 /*HEADER*/
 #header {
-    /*background-color: #e8ece8; СЮДА МОЖНО ПОМЕСТИТЬ ЛЮБОЙ ФОН*/
+    background-image: url(/assets/images/fon/testFon.jpg);
+    background-repeat: no-repeat;
+    height: 760px;
 }
 
 .wrapper {
     margin: auto;
     padding: 18px;
     max-width: 75%;
-
 }
 
+/*--------MENU-------*/
 #menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgb(52, 79, 121, .56);
 }
-
-#header .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#header .logo p {
-    font-weight: 600;
-    font-size: 34px;
-    color: #85bd87;
-    margin: 0;
-}
-
 
 #header .right_header {
     display: flex;
@@ -70,19 +68,19 @@ a {
 
 #header .menu_top li {
     display: inline-block;
-    margin-right: 75px;
+    margin-right: 50px;
 }
 
 
 #header .menu_top li a {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     transition: color .4s ease;
 }
 
 #header .menu_top li a:hover {
-    color: #b34848
+    color: #85bd87
 }
 
 #header .number {
@@ -94,11 +92,26 @@ a {
 #header .number p {
     margin: 0;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #header .number a {
     font-weight: 600;
+    font-size: 14px;
+}
+
+/*--------------LOGO---------------------*/
+#header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header .logo p {
+    font-weight: 600;
+    font-size: 28px;
+    color: #3c3c3c;
+    margin: 0;
 }
 
 /*---------------HEADER_CONTENT------------------------*/
@@ -111,57 +124,192 @@ a {
     justify-content: right;
 }
 
-#header .content{
-    max-width: 720px;
+#header .content {
+    max-width: 510px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 7%;
 }
 
-#header .content .title p{
+#header .content .title p {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 30px;
+    line-height: 60px;
 }
 
-#header .content .description p{
+#header .content .description p {
     font-weight: 600;
-    
+    font-size: 16px;
 }
 
-#header .content .title span{
+#header .content .title span {
     border-bottom: 1px solid #85bd87;
 }
 
+/*---------------BUTTON-----------------------*/
+#header_content .btn {
+    width: 200px;
+    border: 1px solid #8d8888;
+    padding: 14px;
+    background-color: #968da7;
+    border-radius: 25px
+}
 
-#header_content .links{
+a.btn {
+    margin-top: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*----------------LINK---------------------*/
+
+#header_content .links {
     display: flex;
     flex-direction: column;
 }
 
-#header_content .btn  {
-    width: 250px;
-    border: 1px solid #8d8888;
-    padding: 12px;
-    background-color: #85bd87;
-    border-radius: 25px
-}
-
-a.btn{
-    margin-top: 50px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-}
-
 #header_content .links .link {
-    max-width: 48px;
+    max-width: 32px;
     margin-top: 24px;
 }
 
-#header_content .links .link img{
+#header_content .links .link img {
     width: 100%;
+}
+
+/*--------------------------ABOUT ME--------------------*/
+
+#about_me {
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#about_me .wrapper{
+    padding: 0 18px 18px 18px;
+}
+
+#about_me_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+p.round {
+    width: 75px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    border: 2px solid #968da7;
+    border-radius: 50%;
+    margin: 0;
+}
+
+p.title{
+    text-transform: uppercase;
+    color: #4F4C67;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin: 0 0 0 10%;
+}
+
+p.desc{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+/*-----------COL-1--------------------------*/
+
+#about_me_content .col-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+#about_me_content .col-1 .fresh {
+    display: flex;
+    flex-direction: row;
+}
+
+#about_me_content .col-1 .col-1_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about_me_content .col-1 .testimg img{
+    width: 100%;
+}
+
+/*-----------COL-2--------------------------*/
+
+#about_me_content .col-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#about_me_content .col-2 .natural {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about_me_content .col-2 .col-2_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_me_content .col-2 .testimg{
+    margin-left: 5%;
+}
+#about_me_content .col-2 .testimg img{
+    width: 100%;
+}
+
+/*-----------COL-3--------------------------*/
+
+#about_me_content .col-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about_me_content .col-3 .flexibility {
+    display: flex;
+    flex-direction: row;
+}
+
+#about_me_content .col-3 .col-3_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_me_content .col-1 .testimg img{
+    width: 100%;
+}
+
+/*-----------------КОМУ ПОДОЙДЕТ--------*/
+#who_suit {
+    background-image: url(/assets/images/fon/testrandomFon.jpg);
+    background-repeat: no-repeat;
+    height: 760px;
 }
