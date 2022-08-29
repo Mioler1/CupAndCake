@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <title>GreenCake</title>
@@ -21,7 +21,7 @@
                 <div class="right_header">
                     <ul class="menu_top">
                         <li><a href="#about_me">О нас</a></li>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
                         <li><a href="#">Отзывы</a></li>
@@ -131,110 +131,165 @@
     <section id="catalog">
         <div class="wrapper">
             <p class="title_for_section">Каталог товаров</p>
-            <div class="categories">
+            <div class="filter" id="filter">
+                <button class="button button_type_all active" data-filter="all">Все торты</button>
+                <button class="button button_type_classic_cake" data-filter="classic">Классические торты</button>
+                <button class="button button_type_happy_cake" data-filter="happy">Праздничные торты</button>
+                <button class="button button_type_capcake" data-filter="capcake">Капкейки</button>
             </div>
-                <div class="catalog-container">
-                        <input type="radio" id="giroscooters" name="categories" />
-                        <label for="giroscooters">Классические торты</label>
-                        <input type="radio" id="electric_scooters" name="categories"/>
-                        <label for="electric_scooters">Праздничные торты</label>
-                        <input type="radio" id="segways" name="categories"/>
-                        <label for="segways">Капкейки</label>
-                        <input type="radio" id="reset" name="categories"/>
-                        <label for="reset">ВСЕ</label>
-                    <div class="c-card electric_scooters">
-                        <img src="assets/images/cake/classic cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">1000<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+            <div class="main_content">
+                <div class="container">
+                    <div class="card classic">
+                        <img src="assets/images/cake/classic cake.png" alt="" class="card_img">
+                        <p class="cake_name">Радужный с ягодами</p>
+                        <p class="price">5 210р</p>
                     </div>
-                    <div class="c-card electric_scooters">
-                        <img src="assets/images/cake/classic cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">1000<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card classic">
+                        <img src="assets/images/cake/classic cake.png" alt="" class="card_img">
+                        <p class="cake_name">Радужный с ягодами</p>
+                        <p class="price">5 210р</p>
                     </div>
-                    <div class="c-card electric_scooters">
-                        <img src="assets/images/cake/classic cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">1000<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card classic">
+                        <img src="assets/images/cake/classic cake.png" alt="" class="card_img">
+                        <p class="cake_name">Радужный с ягодами</p>
+                        <p class="price">5 210р</p>
                     </div>
-                    <div class="c-card giroscooters">
-                        <img src="assets/images/cake/children cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">6500<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card classic">
+                        <img src="assets/images/cake/classic cake.png" alt="" class="card_img">
+                        <p class="cake_name">Радужный с ягодами</p>
+                        <p class="price">5 210р</p>
                     </div>
-                    <div class="c-card giroscooters">
-                        <img src="assets/images/cake/children cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">6500<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card classic">
+                        <img src="assets/images/cake/classic cake.png" alt="" class="card_img">
+                        <p class="cake_name">Радужный с ягодами</p>
+                        <p class="price">5 210р</p>
                     </div>
-                    <div class="c-card giroscooters">
-                        <img src="assets/images/cake/children cake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">ТОРТ</h4>
-                            <div class="price-container">
-                                <p class="price">6500<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card happy">
+                        <img src="assets/images/cake/children cake.png" alt="" class="card_img">
+                        <p class="cake_name">Шоколадный торт</p>
+                        <p class="price">4 340р</p>
                     </div>
-                    <div class="c-card segways">
-                        <img src="assets/images/cake/capcake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">Капкейк</h4>
-                            <div class="price-container">
-                                <p class="price">31480<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card happy">
+                        <img src="assets/images/cake/children cake.png" alt="" class="card_img">
+                        <p class="cake_name">Шоколадный торт</p>
+                        <p class="price">4 340р</p>
                     </div>
-                    <div class="c-card segways">
-                        <img src="assets/images/cake/capcake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">Капкейк</h4>
-                            <div class="price-container">
-                                <p class="price">31480<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card happy">
+                        <img src="assets/images/cake/children cake.png" alt="" class="card_img">
+                        <p class="cake_name">Шоколадный торт</p>
+                        <p class="price">4 340р</p>
                     </div>
-                    <div class="c-card segways">
-                        <img src="assets/images/cake/capcake.png" alt="card-image">
-                        <div class="card-body">
-                            <h4 class="text-upper text-center" style="color: #3d67b0;">Капкейк</h4>
-                            <div class="price-container">
-                                <p class="price">31480<span>р.</span></p>
-                                <button class="btn btn-primary">Приобрести</button>
-                            </div>
-                        </div>
+                    <div class="card happy">
+                        <img src="assets/images/cake/children cake.png" alt="" class="card_img">
+                        <p class="cake_name">Шоколадный торт</p>
+                        <p class="price">4 340р</p>
                     </div>
+                    <div class="card happy">
+                        <img src="assets/images/cake/children cake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                    <div class="card capcake">
+                        <img src="assets/images/cake/capcake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                    <div class="card capcake">
+                        <img src="assets/images/cake/capcake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                    <div class="card capcake">
+                        <img src="assets/images/cake/capcake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                    <div class="card capcake">
+                        <img src="assets/images/cake/capcake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                    <div class="card capcake">
+                        <img src="assets/images/cake/capcake.png" alt="" class="card_img">
+                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                        <p class="price">1 670р</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="delimetr">
+        <img class="delimetr" src="/assets/images/fon/delimetr.jpg" alt="">
+    </section>
+
+    <section id="fillings">
+        <div class="wrapper">
+            <p class="title_for_section">Мы предлагаем более 10 начинок для торта</p>
+            <div class="slider middle">
+                <div class="sliders">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+
+                    <div class="slide s1">
+                        <div class="slide_container">
+                            <div class="item">
+                                <img src="assets/images/nach/barhat.png" alt="">
+                                <p>Красный бархат</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/medovik.png" alt="">
+                                <p>Медовик</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/barhat.png" alt="">
+                                <p>Красный бархат</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/snikers.png" alt="">
+                                <p>Сникерс</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/chokolade.png" alt="">
+                                <p>Шоколад-вишня</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_container">
+                            <div class="item">
+                                <img src="assets/images/nach/barhat.png" alt="">
+                                <p>Красный бархат</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/medovik.png" alt="">
+                                <p>Медовик</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/barhat.png" alt="">
+                                <p>Красный бархат</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/snikers.png" alt="">
+                                <p>Сникерс</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/nach/chokolade.png" alt="">
+                                <p>Шоколад-вишня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <a class="btn btn-primary btn-up" href="#header"><img src="assets/images/icons/go_up.png" alt="go up"></a>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
