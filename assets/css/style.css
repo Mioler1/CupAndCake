@@ -8,7 +8,7 @@
 
 /*--------------------GENERAL-SETTINGS--------------------*/
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -53,7 +53,7 @@ p.title_for_section {
 
 .wrapper {
     margin: auto;
-    padding: 18px;
+    padding: 10px;
     max-width: 1300px;
     height: auto;
 }
@@ -336,7 +336,7 @@ p.desc {
     background-size: cover;
 }
 
-#who_suit .wrapper{
+#who_suit .wrapper {
     padding-top: 80px;
 }
 
@@ -355,28 +355,30 @@ p.desc {
     padding: 20px;
 }
 
-.elem p.who_description{
+.elem p.who_description {
     max-width: 240px;
     text-align: center;
 }
 
 .btn.btn-primary {
-	background: var(--color-pistachio); 
-	border: var(--color-pistachio);
-	padding: 12px;
-	border-radius: 5px;
-	cursor: pointer;
-	color: #ffffff;
-	font-size: 16px;
+    background: var(--color-pistachio);
+    border: var(--color-pistachio);
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
 }
+
 .btn-up {
-	position: fixed;
-	right: 25px;
-	bottom: 20px;
-	z-index: 110;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    z-index: 110;
 }
+
 .btn-up img {
-	width: 25px;
+    width: 25px;
     display: flex;
     align-items: center;
 }
@@ -384,12 +386,12 @@ p.desc {
 /*-------------CATALOG-------------------*/
 
 .filter {
- padding-top: 20px;
- display: flex;
- justify-content: flex-end;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.filter .button{
+.filter .button {
     border-style: none;
     background-color: transparent;
     color: var(--color-main-text);
@@ -402,15 +404,16 @@ p.desc {
     display: inline-block;
 }
 
-.filter .button:last-child{
+.filter .button:last-child {
     margin-right: 0;
 }
 
-.filter .active{
+.filter .active {
     border-bottom: 1px solid var(--color-pistachio);
     transition: 1s ease all;
 }
-.filter .button:hover{
+
+.filter .button:hover {
     border-bottom: 1px solid var(--color-pistachio);
 }
 
@@ -422,14 +425,14 @@ p.desc {
     height: auto;
 }
 
-.card{
+.card {
     width: calc(25% - 75px);
     height: 320px;
     transition: 0.5s all;
     margin-bottom: 100px;
 }
 
-img.card_img{
+img.card_img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -440,7 +443,7 @@ img.card_img{
     display: none;
 }
 
-p.cake_name{
+p.cake_name {
     margin-top: 5px;
     margin: 0;
     display: block;
@@ -448,7 +451,7 @@ p.cake_name{
     height: auto;
 }
 
-p.price{
+p.price {
     margin: 0;
     margin-top: 5px;
     font-weight: 600;
@@ -475,7 +478,7 @@ p.price{
 
 /*----------slider-----------------*/
 
-.navigation{
+.navigation {
     width: 100%;
     margin-top: 30px;
     display: flex;
@@ -486,18 +489,18 @@ p.price{
     overflow: hidden;
 }
 
-.bar{
-   height: 8px;
-   width: 30px;
-   margin: 6px;
-   cursor: pointer;
-   background-color: #3c3c3c;
-   opacity: .5;
-   border-radius: 10px;
-   transition:  all .4s ease; 
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #3c3c3c;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
 }
 
-.bar:hover{
+.bar:hover {
     opacity: 0.8;
     transform: scale(1.1);
 }
@@ -508,7 +511,7 @@ input[name="r"] {
 }
 
 
-.sliders{
+.sliders {
     width: 200%;
     height: 100%;
     display: flex;
@@ -521,15 +524,16 @@ input[name="r"] {
     transition: all .6s ease;
 }
 
-.slide p{
+.slide p {
     width: 100%;
     height: 100%;
 }
 
-#r1:checked ~ .s1 {
+#r1:checked~.s1 {
     margin-left: 0;
 }
-#r2:checked ~ .s1 {
+
+#r2:checked~.s1 {
     margin-left: -50%;
 }
 
@@ -537,4 +541,159 @@ input[name="r"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/*------------HOW ME WORK-------------*/
+#how_me_work {
+    height: 100%;
+}
+
+.how_me_work_content {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_list p.title_for_section {
+    margin: 0;
+}
+
+.how_me_work_img {
+    width: 50%;
+}
+
+.work_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.item_work_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.how_work_row1 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.how_work_row2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.item_work_list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.item_work_title p.title_item {
+    margin: 0 0 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.item_work_title p.round_number {
+    margin: 0;
+    width: 50px;
+    height: auto;
+    font-weight: 600;
+    font-size: 28px;
+    border: 2px solid var(--color-lavender);
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+/*--------------COMMENTS-----------------------*/
+#comments {
+    background-image: url(/assets/images/fon/testrandomFon.jpg);
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+}
+
+#comments .wrapper {
+    padding-top: 100px;
+    max-width: 80%;
+}
+
+.comments_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    background: #ffffff;
+}
+
+.testimonialBox {
+    position: relative;
+    width: 100%;
+}
+
+.box_content{
+    display: flex;
+    flex-direction: row;
+}
+.details{
+    width: 50%;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.title_comment{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.comment_description{
+    font-size: 15px;
+}
+
+.details_image{
+    width: 50%;
+    float: right;
+    padding: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details_image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.title_section_details{
+    width: 100%;
+    text-align: center;
+    color: #4f4d4d;
+    padding: 0;
+    margin: 0;
+}
+
+#our_work p.title_for_section{
+    margin: 10px 0 10px 0;
 }
