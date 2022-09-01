@@ -2,7 +2,6 @@ function app(){
     const buttons = document.querySelectorAll('.button');
     const cards = document.querySelectorAll('.card');
 
-
     function filter(category, items) {
         items.forEach((item) => {
             const isItemFiltered = !item.classList.contains(category);
@@ -49,22 +48,7 @@ function app(){
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
         // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
       });
 }
 

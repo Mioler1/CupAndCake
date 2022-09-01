@@ -110,13 +110,7 @@ p.title_for_section {
 }
 
 /*--------------LOGO---------------------*/
-#header .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#header .logo p {
+.logo p {
     font-weight: 600;
     font-size: 28px;
     color: var(--color-main-text);
@@ -180,17 +174,17 @@ a.btn {
 
 /*----------------LINK---------------------*/
 
-#header_content .links {
+.links {
     display: flex;
     flex-direction: column;
 }
 
-#header_content .links .link {
+.links .link {
     max-width: 32px;
     margin-top: 24px;
 }
 
-#header_content .links .link img {
+.links .link img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -640,7 +634,7 @@ input[name="r"] {
     padding-bottom: 50px;
 }
 
-.swiper-slide{
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -652,26 +646,27 @@ input[name="r"] {
     width: 100%;
 }
 
-.box_content{
+.box_content {
     display: flex;
     flex-direction: row;
 }
-.details{
+
+.details {
     width: 50%;
     padding: 15px;
     margin-left: 10px;
 }
 
-.title_comment{
+.title_comment {
     font-weight: 600;
     font-size: 17px;
 }
 
-.comment_description{
+.comment_description {
     font-size: 15px;
 }
 
-.details_image{
+.details_image {
     width: 50%;
     float: right;
     padding: 5% 5% 0 5%;
@@ -679,14 +674,15 @@ input[name="r"] {
     flex-direction: column;
     align-items: center;
 }
-.details_image img{
+
+.details_image img {
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 50%;
 }
 
-.title_section_details{
+.title_section_details {
     width: 100%;
     text-align: center;
     color: #4f4d4d;
@@ -694,6 +690,166 @@ input[name="r"] {
     margin: 0;
 }
 
-#our_work p.title_for_section{
+#our_work p.title_for_section {
     margin: 10px 0 10px 0;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    height: 150px;
+}
+
+#application_form .btn {
+    width: 200px;
+    border: 1px solid var(--color-lavender);
+    padding: 10px;
+    background-color: var(--color-lavender);
+    border-radius: 25px
+}
+
+#application_form a.btn {
+    margin: 0;
+}
+
+#application_form {
+    background-image: url(/assets/images/fon/testrandomFon.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+}
+
+#application_form .wrapper {
+    padding-top: 100px;
+    max-width: 80%;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_img {
+    max-width: 50%;
+}
+
+.form_field {
+    width: 350px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type] {
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid #635d5d;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 7px 0;
+    background: transparent;
+    transition: 0.2s;
+}
+
+/*-----------------FOOTER------------*/
+
+#footer {
+    padding-bottom: 20px;
+}
+
+.bottom_menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.block1 {
+    width: 50%;
+}
+
+.block2 {
+    width: 50%;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact .links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer_contact .links a {
+    display: flex;
+    margin-right: 10px;
+}
+
+.footer_contact .links a:last-child {
+    margin: 0;
+}
+
+.footer_contact .number {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_contact .number p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer_contact .number a {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu_bot {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+
+.menu_bot li {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu_bot li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color .4s ease;
+}
+
+.menu_bot li a:hover {
+    color: #85bd87
 }
