@@ -1,3 +1,8 @@
+/*------------------------directives_tailwind---------------------*/
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 /*-----------------------COLOR------------------------------------*/
 :root {
     --color-beige: #fff4df;
@@ -52,9 +57,9 @@ p.title_for_section {
 }
 
 .wrapper {
-    margin: auto;
+    margin: 0 auto;
     padding: 10px;
-    max-width: 1300px;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -617,7 +622,6 @@ input[name="r"] {
 
 #comments .wrapper {
     padding-top: 100px;
-    max-width: 80%;
 }
 
 .comments_content {
@@ -726,7 +730,6 @@ textarea {
 
 #application_form .wrapper {
     padding-top: 100px;
-    max-width: 80%;
 }
 
 .contact_form {
@@ -852,4 +855,22 @@ input[type] {
 
 .menu_bot li a:hover {
     color: #85bd87
+}
+
+@media (max-width:1200px){
+    .wrapper{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .wrapper{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .wrapper{
+        max-width: none;
+    }
 }
