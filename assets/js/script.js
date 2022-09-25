@@ -6,11 +6,7 @@ function app(){
         items.forEach((item) => {
             const isItemFiltered = !item.classList.contains(category);
             const isShowAll = category.toLowerCase() === 'all';
-            if(isItemFiltered && !isShowAll){
-                item.classList.add('hide');
-            } else {
-                item.classList.remove('hide');
-            }
+            return isItemFiltered && !isShowAll ? item.classList.add('hide') : item.classList.remove('hide')
         })
     }
 
@@ -28,7 +24,7 @@ function app(){
     buttons.forEach((button) => {
         button.addEventListener('click', () =>{
             const currentCategoty = button.dataset.filter;
-            filter(currentCategoty, cards);
+            return filter(currentCategoty, cards);
         })
     })
 

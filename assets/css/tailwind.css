@@ -2,13 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html,
+    body {
+        background-color: var(--color-beige);
+        overflow-y: scroll;
+        scrollbar-width: unset;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        min-width: 320px;
+        position: relative;
+        line-height: 1.65;
+        font-family: "Montserrat", sans-serif;
+        overflow: hidden;
+        opacity: 1;
+    }
+    header {
+        background-repeat: no-repeat;
+        max-width: 100%;
+        max-height: 650px;
+        display: block;
+        background-color: #f5f5f5;
+    }
+}
+
+@layer components {
+    .wrapper {
+        @apply max-w-[1200px] m-auto
+    }
+}
+
+
 /*-----------------------COLOR------------------------------------*/
-:root {
+/* :root {
     --color-beige: #fff4df;
     --color-pistachio: #87a97b;
     --color-lavender: #968da7;
     --color-main-text: #3c3c3c;
-}
+} */
 
 /*--------------------GENERAL-SETTINGS--------------------*/
 
@@ -16,14 +50,9 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    background-color: var(--color-beige);
-    overflow-y: scroll;
-    scrollbar-width: unset;
-}
 
-body {
+
+/* body {
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -33,7 +62,7 @@ body {
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
     opacity: 1;
-}
+} */
 
 a {
     text-decoration: none;
@@ -45,22 +74,12 @@ p.title_for_section {
     font-size: 36px;
     text-align: center;
 }
-
-/*HEADER*/
-#header {
-    background-image: url(/assets/images/fon/testFon.jpg);
-    background-repeat: no-repeat;
-    height: 760px;
-    display: block;
-    max-width: 100%;
-}
-
-.wrapper {
+/* .wrapper {
     margin: 0 auto;
     padding: 10px;
     max-width: 1200px;
     height: auto;
-}
+} */
 
 /*--------MENU-------*/
 #menu {
@@ -68,47 +87,58 @@ p.title_for_section {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 15px;
+    padding-top: 10px;
 }
 
-#header .right_header {
+header .right_header {
     display: flex;
     align-items: center;
 }
 
-#header .menu_top {
+header .menu_top {
     list-style-type: none;
 }
 
-#header .menu_top li {
+header .menu_top li {
     display: inline-block;
     margin-right: 50px;
 }
 
+.photo_title {
+    width: 40%;
+    overflow: hidden;
+    max-height: 550px;
+}
 
-#header .menu_top li a {
+.header_content_description {
+    width: 60%;
+    justify-content: center;
+}
+
+header .menu_top li a {
     display: block;
     font-size: 16px;
     font-weight: 600;
     transition: color .4s ease;
 }
 
-#header .menu_top li a:hover {
+header .menu_top li a:hover {
     color: #85bd87
 }
 
-#header .number {
+header .number {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-#header .number p {
+header .number p {
     margin: 0;
     font-weight: 600;
     font-size: 16px;
 }
 
-#header .number a {
+    header .number a {
     font-weight: 600;
     font-size: 14px;
 }
@@ -127,13 +157,13 @@ p.title_for_section {
     display: flex;
     align-items: center;
     padding-bottom: 15px;
-    margin-top: 150px;
-    justify-content: right;
+    justify-content: space-between;
     max-width: 100%;
+    margin-top: 30px;
     height: auto;
 }
 
-#header .content {
+#header_content .content {
     max-width: 510px;
     text-align: center;
     display: flex;
@@ -143,19 +173,19 @@ p.title_for_section {
     height: auto;
 }
 
-#header .content .title p {
+#header_content .content .title p {
     font-weight: 600;
     text-transform: uppercase;
     font-size: calc(10px + (10-5) * ((100vw - 320px) / (1300 - 320)));
     line-height: calc(20px + (60-20) * ((100 - 320px) / (1300 - 320)));
 }
 
-#header .content .description p {
+#header_content .content .description p {
     font-weight: 600;
     font-size: 16px;
 }
 
-#header .content .title span {
+#header_content .content .title span {
     border-bottom: 1px solid #85bd87;
 }
 
