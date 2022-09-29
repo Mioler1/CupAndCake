@@ -23,9 +23,13 @@
     header {
         background-repeat: no-repeat;
         max-width: 100%;
-        max-height: 650px;
+        max-height: 680px;
         display: block;
         background-color: #f5f5f5;
+    }
+    a {
+        text-decoration: none;
+        color: var(--color-main-text);
     }
 }
 
@@ -34,7 +38,6 @@
         @apply max-w-[1200px] m-auto
     }
 }
-
 
 /*-----------------------COLOR------------------------------------*/
 /* :root {
@@ -50,50 +53,13 @@
     box-sizing: border-box;
 }
 
-
-
-/* body {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    min-width: 320px;
-    position: relative;
-    line-height: 1.65;
-    font-family: "Montserrat", sans-serif;
-    overflow: hidden;
-    opacity: 1;
-} */
-
-a {
-    text-decoration: none;
-    color: var(--color-main-text);
-}
-
 p.title_for_section {
     font-weight: 600;
     font-size: 36px;
     text-align: center;
 }
-/* .wrapper {
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 1200px;
-    height: auto;
-} */
 
 /*--------MENU-------*/
-#menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    padding-top: 10px;
-}
-
-header .right_header {
-    display: flex;
-    align-items: center;
-}
 
 header .menu_top {
     list-style-type: none;
@@ -102,17 +68,6 @@ header .menu_top {
 header .menu_top li {
     display: inline-block;
     margin-right: 50px;
-}
-
-.photo_title {
-    width: 40%;
-    overflow: hidden;
-    max-height: 550px;
-}
-
-.header_content_description {
-    width: 60%;
-    justify-content: center;
 }
 
 header .menu_top li a {
@@ -126,32 +81,12 @@ header .menu_top li a:hover {
     color: #85bd87
 }
 
-header .number {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-header .number p {
-    margin: 0;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-    header .number a {
-    font-weight: 600;
-    font-size: 14px;
-}
-
-/*--------------LOGO---------------------*/
-.logo p {
-    font-weight: 600;
-    font-size: 28px;
-    color: var(--color-main-text);
-    margin: 0;
-}
-
 /*---------------HEADER_CONTENT------------------------*/
+
+.header_content_description {
+    width: 60%;
+    justify-content: center;
+}
 
 #header_content {
     display: flex;
@@ -187,23 +122,6 @@ header .number p {
 
 #header_content .content .title span {
     border-bottom: 1px solid #85bd87;
-}
-
-/*---------------BUTTON-----------------------*/
-#header_content .btn {
-    width: 200px;
-    border: 1px solid var(--color-lavender);
-    padding: 14px;
-    background-color: var(--color-lavender);
-    border-radius: 25px
-}
-
-a.btn {
-    margin-top: 35px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
 }
 
 /*----------------LINK---------------------*/
