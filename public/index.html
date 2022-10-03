@@ -13,42 +13,64 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="flex items-center justify-between pb-4 pt-3">
+    <header class="relative">
+        <div class="wrapper lg:max-w-4xl md:max-w-3xl">
+            <nav class="flex items-center justify-between p-4 pt-3">
                 <a href="#" class="logo font-semibold text-3xl m-0">
                     <p>GreenCake</p>
                 </a>
-                <div class="flex items-center">
-                    <ul class="menu_top list-none">
-                        <li><a href="#about_me">О нас</a></li>
-                        <li><a href="#catalog">Каталог</a></li>
-                        <li><a href="#how_me_work">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#comments">Отзывы</a></li>
+                <div class="flex items-center md:hidden">
+                    <ul class="menu_top list-none gap-10 flex mr-11 lg:gap-6">
+                        <li><a href="#about_me" class="font-semibold text-base hover:text-lime-700 lg:text-sm">О нас</a>
+                        </li>
+                        <li><a href="#catalog"
+                                class="font-semibold text-base hover:text-lime-700 lg:text-sm">Каталог</a></li>
+                        <li><a href="#how_me_work"
+                                class="font-semibold text-base hover:text-lime-700 lg:text-sm">Доставка</a></li>
+                        <li><a href="#" class="font-semibold text-base hover:text-lime-700 lg:text-sm">Контакты</a></li>
+                        <li><a href="#comments"
+                                class="font-semibold text-base hover:text-lime-700 lg:text-sm">Отзывы</a></li>
                     </ul>
+
                     <div class="flex items-center flex-col">
-                        <p class="font-semibold text-base">8 (495) 100-00-00</p>
-                        <a href="#" class="font-semibold text-sm">Заказать звонок</a>
+                        <p class="font-semibold text-base lg:text-sm">8 (495) 100-00-00</p>
+                        <a href="#" class="font-semibold text-sm lg:text-xs">Заказать звонок</a>
                     </div>
                 </div>
-            </div>
 
-            <div id="header_content">
-                <div class="photo_title w-2/5 max-h-2xl flex justify-center overflow-hidden">
+                <ul id="menu" class="absolute hidden left-6 right-6 top-16 bg-gray-200 flex-col items-center">
+                    <li><a href="#" class="block py-2">О нас</a></li>
+                    <li><a href="#" class="block py-2">Каталог</a></li>
+                    <li><a href="#" class="block py-2"> Доставка</a></li>
+                    <li><a href="#" class="block py-2">Контакты</a></li>
+                    <li><a href="#" class="block py-2">Отзывы</a></li>
+                </ul>
+
+                <button class="burger hidden md:block">
+                    <span class="burger-line top-line"></span>
+                    <span class="burger-line mid-line"></span>
+                    <span class="burger-line bottom-line"></span>
+                </button>
+            </nav>
+
+            <div class="header_content flex items-center pb-4 justify-between max-w-full mt-7 h-auto">
+                <div class="photo_title w-2/5 max-h-2xl flex justify-center overflow-hidden sm:hidden">
                     <img src="/assets/images/fon/photoHeader.jpg" class="w-5/6 bg-gray-200 h-auto block p-10" alt="">
                 </div>
-                <div class="header_content_description flex">
-                    <div class="content">
-                        <div class="title">
-                            <p>Торты и десерты ручной работы из <span>натуральных</span> продуктов по низкой цене</p>
-                        </div>
-                        <div class="description">
-                            <p>Доставим торт к вам домой в удобное время и сделаем скидку на следующий заказ</p>
-                        </div>
-                        <a href="#" class="w-52 bg-gray-200 p-4 mt-6 border-2 border-gray-300 rounded-md text-lg font-medium hover:bg-gray-300">Заказать торт</a>
+                <div class="flex justify-center flex-row sm:flex-col">
+                    <div class="content max-w-lg text-center flex flex-col items-center h-auto mr-12 sm:mr-0 p-2">
+                        <p class="font-semibold uppercase text-2xl leading-10 lg:text-xl md:text-base sm:text-lg">Торты
+                            и десерты ручной работы из
+                            <span>натуральных</span> продуктов по низкой цене
+                        </p>
+                        <p class="text-base font-normal mt-5 lg:text-sm md:text-xs">Доставим торт к вам домой в удобное
+                            время и сделаем скидку
+                            на следующий заказ</p>
+                        <a href="#"
+                            class="w-52 bg-gray-200 p-4 mt-6 border-2 border-gray-300 rounded-md text-lg font-medium hover:bg-gray-300">Заказать
+                            торт</a>
                     </div>
-                    <div class="links">
+                    <div class="links flex flex-col sm:flex-row items-center gap-5 justify-center">
                         <a href="tg://resolve?domain=dinozavrrrrikk" class="link" target="_blank"><img
                                 src="/assets/images/icons/telegram.png" alt="Телеграм"></a>
                         <a href="https://instagram.com/dina.nasybullina03?igshid=NmNmNjAwNzg=" class="link"

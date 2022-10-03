@@ -39,6 +39,8 @@
     }
 }
 
+
+
 /*-----------------------COLOR------------------------------------*/
 /* :root {
     --color-beige: #fff4df;
@@ -59,73 +61,14 @@ p.title_for_section {
     text-align: center;
 }
 
-/*--------MENU-------*/
-
-header .menu_top {
-    list-style-type: none;
-}
-
-header .menu_top li {
-    display: inline-block;
-    margin-right: 50px;
-}
-
-header .menu_top li a {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    transition: color .4s ease;
-}
-
-header .menu_top li a:hover {
-    color: #85bd87
-}
-
 /*---------------HEADER_CONTENT------------------------*/
 
-.header_content_description {
-    width: 60%;
-    justify-content: center;
-}
 
-#header_content {
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
-    justify-content: space-between;
-    max-width: 100%;
-    margin-top: 30px;
-    height: auto;
-}
-
-#header_content .content {
-    max-width: 510px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 7%;
-    height: auto;
-}
-
-#header_content .content .title p {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: calc(10px + (10-5) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(20px + (60-20) * ((100 - 320px) / (1300 - 320)));
-}
-
-#header_content .content .description p {
-    font-weight: 600;
-    font-size: 16px;
-}
-
-#header_content .content .title span {
+.header_content .content .title span {
     border-bottom: 1px solid #85bd87;
 }
 
 /*----------------LINK---------------------*/
-
 .links {
     display: flex;
     flex-direction: column;
@@ -141,6 +84,56 @@ header .menu_top li a:hover {
     max-width: 100%;
     height: auto;
 }
+
+/*------------------BURGER_MENU--------------*/
+
+.burger {
+    height: 20px;
+    position: relative;
+    width: 30px;
+}
+
+.burger-line {
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background: #3c3c3c;
+    transition: .3s all ease;
+}
+.top-line{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mid-line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active > .top-line{
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s all ease;
+}
+
+.burger.active > .mid-line {
+    opacity: 0;
+    transition: .3s all ease;
+}
+
+.burger.active > .bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: .3s all ease;
+}
+
 
 /*--------------------------ABOUT ME--------------------*/
 
