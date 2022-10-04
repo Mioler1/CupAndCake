@@ -15,12 +15,12 @@
 <body>
     <header class="relative">
         <div class="wrapper lg:max-w-4xl md:max-w-3xl">
-            <nav class="flex items-center justify-between p-4 pt-3">
+            <nav class="flex items-center justify-between p-4 pt-3 z-20 relative">
                 <a href="#" class="logo font-semibold text-3xl m-0">
                     <p>GreenCake</p>
                 </a>
                 <div class="flex items-center md:hidden">
-                    <ul class="menu_top list-none gap-10 flex mr-11 lg:gap-6">
+                    <ul class="menu_top list-none gap-10 flex mr-11 lg:gap-5 lg:mr-8">
                         <li><a href="#about_me" class="font-semibold text-base hover:text-lime-700 lg:text-sm">О нас</a>
                         </li>
                         <li><a href="#catalog"
@@ -53,29 +53,29 @@
                 </button>
             </nav>
 
-            <div class="header_content flex items-center pb-4 justify-between max-w-full mt-7 h-auto">
+            <div class=" header_content flex items-center justify-between max-w-full mt-7 h-auto md:justify-center">
                 <div class="photo_title w-2/5 max-h-2xl flex justify-center overflow-hidden sm:hidden">
-                    <img src="/assets/images/fon/photoHeader.jpg" class="w-5/6 bg-gray-200 h-auto block p-10" alt="">
+                    <img src="/assets/images/fon/photoHeader.jpg" class="w-5/6 bg-gray-200 h-auto block p-10 md:p-4 lg:p-6" alt="">
                 </div>
-                <div class="flex justify-center flex-row sm:flex-col">
-                    <div class="content max-w-lg text-center flex flex-col items-center h-auto mr-12 sm:mr-0 p-2">
-                        <p class="font-semibold uppercase text-2xl leading-10 lg:text-xl md:text-base sm:text-lg">Торты
+                <div class="flex justify-center flex-row md:p-2 md:flex-col sm:flex-col">
+                    <div class="content max-w-lg text-center flex flex-col mr-12 items-center h-auto lg:max-w-md lg:mr-6 md:max-w-sm md:mr-4 sm:mr-0 p-2">
+                        <p class="font-semibold uppercase text-2xl leading-10 lg:text-lg md:text-base sm:text-lg">Торты
                             и десерты ручной работы из
-                            <span>натуральных</span> продуктов по низкой цене
+                            <span class="border-b border-green-700">натуральных</span> продуктов по низкой цене
                         </p>
-                        <p class="text-base font-normal mt-5 lg:text-sm md:text-xs">Доставим торт к вам домой в удобное
+                        <p class="text-base font-normal mt-5 lg:text-base md:text-sm">Доставим торт к вам домой в удобное
                             время и сделаем скидку
                             на следующий заказ</p>
                         <a href="#"
-                            class="w-52 bg-gray-200 p-4 mt-6 border-2 border-gray-300 rounded-md text-lg font-medium hover:bg-gray-300">Заказать
+                            class="w-52 bg-gray-200 p-4 mt-4 border-2 border-gray-300 rounded-md text-lg font-medium hover:bg-gray-300">Заказать
                             торт</a>
                     </div>
-                    <div class="links flex flex-col sm:flex-row items-center gap-5 justify-center">
-                        <a href="tg://resolve?domain=dinozavrrrrikk" class="link" target="_blank"><img
+                    <div class="links flex flex-col md:flex-row md:items-center md:gap-6 md:justify-center sm:flex-row items-center gap-5 justify-center">
+                        <a href="tg://resolve?domain=dinozavrrrrikk" class="link lg:w-7" target="_blank"><img
                                 src="/assets/images/icons/telegram.png" alt="Телеграм"></a>
-                        <a href="https://instagram.com/dina.nasybullina03?igshid=NmNmNjAwNzg=" class="link"
+                        <a href="https://instagram.com/dina.nasybullina03?igshid=NmNmNjAwNzg=" class="link lg:w-7"
                             target="_blank"><img src="/assets/images/icons/inst.png" alt="Инстаграм="></a>
-                        <a href="https://vk.com/im?sel=162632641" class="link" target="_blank"><img
+                        <a href="https://vk.com/im?sel=162632641" class="link lg:w-7" target="_blank"><img
                                 src="/assets/images/icons/vk.png" alt="Вконтакте"></a>
                     </div>
                 </div>
@@ -83,25 +83,25 @@
         </div>
     </header>
 
-    <section id="about_me">
-        <div class="wrapper">
+    <section class="about h-max pt-2 pb-10">
+        <div class="wrapper p-4">
             <p class="title_for_section">3 причины выбрать нас</p>
-            <div id="about_me_content">
-                <div class="col-1">
-                    <div class="col-1_content">
-                        <div class="fresh">
+            <div class="flex flex-col mt-5">
+                <div class="flex flex-row justify-center items-center">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row">
                             <p class="round">1</p>
                             <p class="title">Свежесть</p>
                         </div>
                         <p class="desc">Начинаем готовить за 10 часов до доставки, чтобы торт был свежим</p>
                     </div>
-                    <img src="/assets/images/fon/testFunc.png" alt="" class="testimg">
+                    <img src="/assets/images/fon/fresh.png" alt="" class="max-w-sm block h-auto">
                 </div>
 
-                <div class="col-2">
-                    <img src="/assets/images/fon/testimg2.png" alt="" class="testimg">
-                    <div class="col-2_content">
-                        <div class="natural">
+                <div class="flex flex-row justify-center items-center mt-10">
+                    <img src="/assets/images/fon/natural.png" alt="" class="max-w-sm block h-auto">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row">
                             <p class="round">2</p>
                             <p class="title">Натуральность</p>
                         </div>
@@ -110,48 +110,17 @@
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <div class="col-3_content">
-                        <div class="flexibility">
+                <div class="flex flex-row justify-center items-center mt-10">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row">
                             <p class="round">3</p>
                             <p class="title">Гибкость</p>
                         </div>
                         <p class="desc">Индивидуально согласовываем рецепт и меняем его по вашему желанию</p>
                     </div>
-                    <img src="/assets/images/fon/testimg3.png" alt="" class="testimg">
+                    <img src="/assets/images/fon/flexiblity.png" alt="" class="max-w-sm block h-auto">
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section id="who_suit">
-        <div class="wrapper">
-            <p class="title_for_section">Кому подойдут торты?</p>
-            <div class="row_who_suit">
-                <div class="elem">
-                    <img src="/assets/images/icons/sport.png" alt="Телеграм">
-                    <h3 class="who">Спортсменам</h3>
-                    <p class="who_description">В составе тортов нет сахара и мало калорий, а поэтому торты не навредят
-                        фигуре</p>
-                </div>
-                <div class="elem">
-                    <img src="/assets/images/icons/children.png" alt="Телеграм">
-                    <h3 class="who">Детям</h3>
-                    <p class="who_description">Мы добавляем только полезные ингредиенты, в которых содержатся витамины
-                    </p>
-                </div>
-                <div class="elem">
-                    <img src="/assets/images/icons/allergik.png" alt="Аллергикам">
-                    <h3 class="who">Аллергикам</h3>
-                    <p class="who_description">Если у вас аллергия на продукт, скажите нам. Мы придумаем, чем его
-                        заменить</p>
-                </div>
-                <div class="elem">
-                    <img src="/assets/images/icons/veg.png" alt="Вегетарианцем">
-                    <h3 class="who">Вегетарианцем</h3>
-                    <p class="who_description">Мы заменим коровье молоко на соевое, кокосовое или миндальное</p>
-                </div>
             </div>
         </div>
     </section>

@@ -35,7 +35,7 @@
 
 @layer components {
     .wrapper {
-        @apply max-w-[1200px] m-auto
+        @apply max-w-[1200px] m-auto p-4
     }
 }
 
@@ -62,11 +62,6 @@ p.title_for_section {
 }
 
 /*---------------HEADER_CONTENT------------------------*/
-
-
-.header_content .content .title span {
-    border-bottom: 1px solid #85bd87;
-}
 
 /*----------------LINK---------------------*/
 .links {
@@ -137,12 +132,8 @@ p.title_for_section {
 
 /*--------------------------ABOUT ME--------------------*/
 
-#about_me {
-    height: 100%;
-}
-
-#about_me .wrapper {
-    padding: 0 18px 18px 18px;
+.about {
+    background: #f7f7f7;
 }
 
 #about_me_content {
@@ -178,148 +169,6 @@ p.desc {
     text-align: center;
     margin-top: 20px;
     max-width: 70%;
-}
-
-/*-----------COL-1--------------------------*/
-
-#about_me_content .col-1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    justify-content: space-between;
-}
-
-#about_me_content .col-1 .fresh {
-    display: flex;
-    flex-direction: row;
-}
-
-#about_me_content .col-1 .col-1_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#about_me_content .col-1 .testimg img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/*-----------COL-2--------------------------*/
-
-#about_me_content .col-2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#about_me_content .col-2 .natural {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#about_me_content .col-2 .col-2_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#about_me_content .col-2 .testimg {
-    margin-left: 5%;
-}
-
-#about_me_content .col-2 .testimg img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/*-----------COL-3--------------------------*/
-
-#about_me_content .col-3 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#about_me_content .col-3 .flexibility {
-    display: flex;
-    flex-direction: row;
-}
-
-#about_me_content .col-3 .col-3_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#about_me_content .col-1 .testimg img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/*-----------------КОМУ ПОДОЙДЕТ--------*/
-#who_suit {
-    background-image: url(/assets/images/fon/testrandomFon.jpg);
-    background-repeat: no-repeat;
-    height: 700px;
-    width: 100%;
-    background-size: cover;
-}
-
-#who_suit .wrapper {
-    padding-top: 80px;
-}
-
-.row_who_suit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
-    height: auto;
-}
-
-.elem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.elem p.who_description {
-    max-width: 240px;
-    text-align: center;
-}
-
-.btn.btn-primary {
-    background: var(--color-pistachio);
-    border: var(--color-pistachio);
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.btn-up {
-    position: fixed;
-    right: 25px;
-    bottom: 20px;
-    z-index: 110;
-}
-
-.btn-up img {
-    width: 25px;
-    display: flex;
-    align-items: center;
 }
 
 /*-------------CATALOG-------------------*/
