@@ -15,7 +15,7 @@
 <body>
     <header class="relative">
         <div class="wrapper lg:max-w-4xl md:max-w-3xl">
-            <nav class="flex items-center justify-between p-4 pt-3 z-20 relative">
+            <nav class="flex items-center justify-between p-4 pt-3">
                 <a href="#" class="logo font-semibold text-3xl m-0">
                     <p>GreenCake</p>
                 </a>
@@ -148,99 +148,108 @@
     <section id="catalog">
         <div class="wrapper">
             <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Каталог товаров</p>
-            <div class="filter" id="filter">
-                <button class="button button_type_all active" data-filter="all">Все торты</button>
-                <button class="button button_type_classic_cake" data-filter="classic">Классические торты</button>
-                <button class="button button_type_happy_cake" data-filter="happy">Праздничные торты</button>
-                <button class="button button_type_capcake" data-filter="capcake">Капкейки</button>
+            <div class="filter pt-5 flex justify-end md:justify-center" id="filter">
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_all active" data-filter="all">Все торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_classic_cake" data-filter="classic">Классические торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_happy_cake" data-filter="happy">Праздничные торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_capcake" data-filter="capcake">Капкейки</button>
             </div>
             <div class="main_content">
-                <div class="container">
-                    <div class="card classic">
-                        <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
-                        <p class="cake_name">Радужный с ягодами</p>
-                        <p class="price">5 210р</p>
+                <div class="flex flex-wrap mt-6 justify-center h-auto gap-12">
+                    <div class="catalog-col classic">
+                        <div class="card">
+                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <p class="cake_name">Радужный с ягодами</p>
+                            <p class="price">5 210р</p>
+                        </div>
                     </div>
-                    <div class="card classic">
-                        <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
-                        <p class="cake_name">Радужный с ягодами</p>
-                        <p class="price">5 210р</p>
+                    <div class="catalog-col classic">
+                        <div class="card">
+                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <p class="cake_name">Радужный с ягодами</p>
+                            <p class="price">5 210р</p>
+                        </div>
                     </div>
-                    <div class="card classic">
-                        <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
-                        <p class="cake_name">Радужный с ягодами</p>
-                        <p class="price">5 210р</p>
+                    <div class="catalog-col classic">
+                        <div class="card">
+                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <p class="cake_name">Радужный с ягодами</p>
+                            <p class="price">5 210р</p>
+                        </div>
                     </div>
-                    <div class="card classic">
-                        <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
-                        <p class="cake_name">Радужный с ягодами</p>
-                        <p class="price">5 210р</p>
+                    <div class="catalog-col classic">
+                        <div class="card">
+                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <p class="cake_name">Радужный с ягодами</p>
+                            <p class="price">5 210р</p>
+                        </div>
                     </div>
-                    <div class="card classic">
-                        <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
-                        <p class="cake_name">Радужный с ягодами</p>
-                        <p class="price">5 210р</p>
+                    <div class="catalog-col happy">
+                        <div class="card">
+                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <p class="cake_name">Шоколадный торт</p>
+                            <p class="price">4 340р</p>
+                        </div>
                     </div>
-                    <div class="card happy">
-                        <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
-                        <p class="cake_name">Шоколадный торт</p>
-                        <p class="price">4 340р</p>
+                    <div class="catalog-col happy">
+                        <div class="card">
+                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <p class="cake_name">Шоколадный торт</p>
+                            <p class="price">4 340р</p>
+                        </div>
                     </div>
-                    <div class="card happy">
-                        <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
-                        <p class="cake_name">Шоколадный торт</p>
-                        <p class="price">4 340р</p>
+                    <div class="catalog-col happy">
+                        <div class="card">
+                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <p class="cake_name">Шоколадный торт</p>
+                            <p class="price">4 340р</p>
+                        </div>
                     </div>
-                    <div class="card happy">
-                        <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
-                        <p class="cake_name">Шоколадный торт</p>
-                        <p class="price">4 340р</p>
+                    <div class="catalog-col happy">
+                        <div class="card">
+                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <p class="cake_name">Шоколадный торт</p>
+                            <p class="price">4 340р</p>
+                        </div>
                     </div>
-                    <div class="card happy">
-                        <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
-                        <p class="cake_name">Шоколадный торт</p>
-                        <p class="price">4 340р</p>
+                    <div class="catalog-col capcake">
+                        <div class="card">
+                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                            <p class="price">1 670р</p>
+                        </div>
                     </div>
-                    <div class="card happy">
-                        <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
+                    <div class="catalog-col capcake">
+                        <div class="card">
+                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                            <p class="price">1 670р</p>
+                        </div>
                     </div>
-                    <div class="card capcake">
-                        <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
+                    <div class="catalog-col capcake">
+                        <div class="card">
+                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                            <p class="price">1 670р</p>
+                        </div>
                     </div>
-                    <div class="card capcake">
-                        <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
-                    </div>
-                    <div class="card capcake">
-                        <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
-                    </div>
-                    <div class="card capcake">
-                        <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
-                    </div>
-                    <div class="card capcake">
-                        <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
-                        <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
-                        <p class="price">1 670р</p>
+                    <div class="catalog-col capcake">
+                        <div class="card">
+                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
+                            <p class="price">1 670р</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="fillings">
+    <section id="fillings" class="mt-10">
         <div class="wrapper">
             <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Мы предлагаем более 10 начинок для
                 торта</p>
-            <div class="slider middle">
+            <div class="slider middle mt-10">
                 <div class="sliders">
                     <input type="radio" name="r" id="r1" checked>
                     <input type="radio" name="r" id="r2">

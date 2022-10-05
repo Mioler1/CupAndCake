@@ -1,6 +1,6 @@
 function app(){
     const buttons = document.querySelectorAll('.button');
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.catalog-col');
 
     function filter(category, items) {
         items.forEach((item) => {

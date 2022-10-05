@@ -38,7 +38,7 @@
 
 @layer components {
     .wrapper {
-        @apply max-w-[1200px] m-auto p-4
+        @apply max-w-[1200px] m-auto p-1
     }
 }
 
@@ -166,18 +166,9 @@ p.desc {
 
 /*-------------CATALOG-------------------*/
 
-.filter {
-    padding-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-}
-
 .filter .button {
     border-style: none;
     background-color: transparent;
-    color: var(--color-main-text);
-    font-size: 18px;
-    padding: 10px;
     margin-right: 20px;
     cursor: pointer;
     position: relative;
@@ -190,32 +181,22 @@ p.desc {
 }
 
 .filter .active {
-    border-bottom: 1px solid var(--color-pistachio);
+    border-bottom: 1px solid green;
     transition: 1s ease all;
 }
 
 .filter .button:hover {
-    border-bottom: 1px solid var(--color-pistachio);
+    border-bottom: 1px solid green;
 }
 
-.main_content .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    justify-content: space-between;
-    height: auto;
-}
-
-.card {
-    width: calc(25% - 75px);
-    height: 320px;
+ .card {
     transition: 0.5s all;
-    margin-bottom: 100px;
 }
 
 img.card_img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
@@ -241,14 +222,10 @@ p.price {
     height: auto;
 }
 
-/* @media (max-width: 1300px) {
-    #header .content .title p {
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: calc(20px + (30-20) * ((100vw - 320px) / (1300 - 320)));
-        line-height: calc(20px + (60-20) * ((100vw - 320px) / (1300 - 320)));
+.catalog__col {
+    width: 25% /* Задаем ширину блока(по 4 блока в ряд)*/;
+    margin: auto;
     }
-} */
 
 /*-------DELIMETR------------*/
 .delimetr {
@@ -530,5 +507,3 @@ input[type] {
     background: transparent;
     transition: 0.2s;
 }
-
-/*-----------------FOOTER------------*/
