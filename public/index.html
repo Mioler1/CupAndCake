@@ -53,10 +53,10 @@
                 </button>
             </nav>
 
-            <div class=" header_content flex items-center justify-between max-w-full mt-7 h-auto md:justify-center">
-                <div class="photo_title w-2/5 max-h-2xl flex justify-center overflow-hidden sm:hidden">
-                    <img src="/assets/images/fon/photoHeader.jpg"
-                        class="w-5/6 bg-gray-200 h-auto block p-10 md:p-4 lg:p-6" alt="">
+            <div class="header_content flex items-center justify-between max-w-full mt-7 h-auto md:justify-center">
+                <div class="photo_title w-2/5 h-auto flex justify-center overflow-hidden md:hidden">
+                    <img src="/assets/images/fon/photoHeader.png" class="w-5/6 bg-gray-200 h-auto block p-6 lg:p-4"
+                        alt="">
                 </div>
                 <div class="flex justify-center flex-row md:p-2 md:flex-col sm:flex-col">
                     <div
@@ -87,16 +87,13 @@
         </div>
     </header>
 
-    <section id="about_me" class="h-max pt-2 pb-10">
+    <section id="about_me" class="h-max pt-2 pb-8">
         <div class="wrapper p-4">
-            <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">3 причины выбрать нас</p>
+            <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl pb-4">3 причины выбрать нас</p>
             <div class="flex flex-col mt-5">
                 <div class="flex flex-row justify-center items-center">
                     <div class="flex flex-col justify-center items-center">
                         <div class="flex flex-row">
-                            <p
-                                class="p-1 w-16 items-center font-semibold text-3xl lg:w-12 lg:items-center lg:font-semibold lg:text-3xl md:w-10 md:text-2xl sm:text-xl sm:w-6">
-                                1</p>
                             <p
                                 class="p-1 uppercase text-3xl font-semibold flex items-end text-center lg:text-2xl md:text-xl sm:text-lg">
                                 Свежесть</p>
@@ -108,12 +105,9 @@
                 </div>
 
                 <div class="flex flex-row justify-center items-center mt-10">
-                    <img src="/assets/images/fon/natural.png" alt="" class=" max-w-sm block h-auto lg:w-4/6 md:w-2/4">
+                    <img src="/assets/images/fon/natural.png" alt="" class="max-w-sm block h-auto lg:w-4/6 md:w-2/4">
                     <div class="flex flex-col justify-center items-center">
                         <div class="flex flex-row">
-                            <p
-                                class="p-1 w-16 items-center font-semibold text-3xl lg:w-12 lg:items-center lg:font-semibold lg:text-3xl md:w-10 md:text-2xl sm:text-xl sm:w-6">
-                                2</p>
                             <p
                                 class="p-1 uppercase text-3xl font-semibold flex items-end text-center lg:text-2xl md:text-xl sm:text-lg">
                                 Натуральность</p>
@@ -127,9 +121,6 @@
                 <div class="flex flex-row justify-center items-center mt-10">
                     <div class="flex flex-col justify-center items-center">
                         <div class="flex flex-row">
-                            <p
-                                class="p-1 w-16 items-center font-semibold text-3xl lg:w-12 lg:font-semibold lg:text-3xl md:w-10 md:text-2xl sm:text-xl sm:w-6">
-                                3</p>
                             <p
                                 class="p-1 uppercase text-3xl font-semibold flex items-end text-center lg:text-2xl md:text-xl sm:text-lg">
                                 Гибкость</p>
@@ -145,97 +136,174 @@
         </div>
     </section>
 
-    <section id="catalog">
-        <div class="wrapper">
+    <section id="catalog" class="pt-2">
+        <div class="wrapper p-4">
             <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Каталог товаров</p>
-            <div class="filter pt-5 flex justify-end md:justify-center" id="filter">
-                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_all active" data-filter="all">Все торты</button>
-                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_classic_cake" data-filter="classic">Классические торты</button>
-                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_happy_cake" data-filter="happy">Праздничные торты</button>
-                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_capcake" data-filter="capcake">Капкейки</button>
+            <div class="filter pt-5 flex mr-10 justify-end lg:justify-center lg:mr-0 sm:mr-0 md:mr-0 md:justify-center"
+                id="filter">
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_all active"
+                    data-filter="all">Все торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_classic_cake"
+                    data-filter="classic">Классические торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_happy_cake"
+                    data-filter="happy">Праздничные торты</button>
+                <button class="text-lg p-2 md:text-sm sm:text-xs sm:mr-2 button button_type_capcake"
+                    data-filter="capcake">Капкейки</button>
             </div>
             <div class="main_content">
                 <div class="flex flex-wrap mt-6 justify-center h-auto gap-12">
                     <div class="catalog-col classic">
                         <div class="card">
-                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span><img src="/assets/images/cake/classic cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Радужный с ягодами</p>
                             <p class="price">5 210р</p>
                         </div>
                     </div>
                     <div class="catalog-col classic">
                         <div class="card">
-                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span><img src="/assets/images/cake/classic cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Радужный с ягодами</p>
                             <p class="price">5 210р</p>
                         </div>
                     </div>
                     <div class="catalog-col classic">
                         <div class="card">
-                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span><img src="/assets/images/cake/classic cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Радужный с ягодами</p>
                             <p class="price">5 210р</p>
                         </div>
                     </div>
                     <div class="catalog-col classic">
                         <div class="card">
-                            <img src="/assets/images/cake/classic cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span><img src="/assets/images/cake/classic cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Радужный с ягодами</p>
                             <p class="price">5 210р</p>
                         </div>
                     </div>
                     <div class="catalog-col happy">
                         <div class="card">
-                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/children cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Шоколадный торт</p>
                             <p class="price">4 340р</p>
                         </div>
                     </div>
                     <div class="catalog-col happy">
                         <div class="card">
-                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/children cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Шоколадный торт</p>
                             <p class="price">4 340р</p>
                         </div>
                     </div>
                     <div class="catalog-col happy">
                         <div class="card">
-                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/children cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Шоколадный торт</p>
                             <p class="price">4 340р</p>
                         </div>
                     </div>
                     <div class="catalog-col happy">
                         <div class="card">
-                            <img src="/assets/images/cake/children cake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/children cake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Шоколадный торт</p>
                             <p class="price">4 340р</p>
                         </div>
                     </div>
                     <div class="catalog-col capcake">
                         <div class="card">
-                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/capcake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
                             <p class="price">1 670р</p>
                         </div>
                     </div>
                     <div class="catalog-col capcake">
                         <div class="card">
-                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/capcake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
                             <p class="price">1 670р</p>
                         </div>
                     </div>
                     <div class="catalog-col capcake">
                         <div class="card">
-                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/capcake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
                             <p class="price">1 670р</p>
                         </div>
                     </div>
                     <div class="catalog-col capcake">
                         <div class="card">
-                            <img src="/assets/images/cake/capcake.png" alt="" class="card_img">
+                            <div class="descr_card overflow-hidden relative">
+                                <span class="descr items-center p-1 flex flex-col justify-center gap-4">
+                                    <h1 class="border-b">Название торта</h1>
+                                    <p>Состав торта:</p>
+                                    <a href="#" class="border p-2">Посмотреть</a>
+                                </span> <img src="/assets/images/cake/capcake.png" alt="" class="img card_img">
+                            </div>
                             <p class="cake_name">Капкейк крем-шоколад 6шт.</p>
                             <p class="price">1 670р</p>
                         </div>
@@ -245,117 +313,98 @@
         </div>
     </section>
 
-    <section id="fillings" class="mt-10">
-        <div class="wrapper">
+    <section id="fillings" class="mt-10 pt-2 pb-4">
+        <div class="wrapper pt-10">
             <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Мы предлагаем более 10 начинок для
                 торта</p>
-            <div class="slider middle mt-10">
-                <div class="sliders">
-                    <input type="radio" name="r" id="r1" checked>
-                    <input type="radio" name="r" id="r2">
+            <div class="slide-container swiper pt-10 items-center justify-center">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/barhat.png">
+                            <h1 class="">красный бархат</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/chokolade.png" alt="">
+                            <h1 class="">Шоколадный</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/snikers.png" alt="">
+                            <h1 class="">Сникерс</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/medovik.png" alt="">
+                            <h1 class="">Медовик</h1>
+                        </div>
+                        <div class="card swiper-slide ">
+                            <img src="/assets/images/nach/barhat.png" alt="">
+                            <h1 class="">красный бархат</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/chokolade.png" alt="">
+                            <h1 class="">Шоколадный</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/snikers.png" alt="">
+                            <h1 class="">Сникерс</h1>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img src="/assets/images/nach/medovik.png" alt="">
+                            <h1 class="">Медовик</h1>
+                        </div>
+                    </div>
 
-                    <div class="slide s1">
-                        <div class="slide_container">
-                            <div class="item">
-                                <img src="/assets/images/nach/barhat.png" alt="">
-                                <p>Красный бархат</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/medovik.png" alt="">
-                                <p>Медовик</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/barhat.png" alt="">
-                                <p>Красный бархат</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/snikers.png" alt="">
-                                <p>Сникерс</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/chokolade.png" alt="">
-                                <p>Шоколад-вишня</p>
-                            </div>
-                        </div>
+                    <div class="flex flex-row justify-end mt-7 gap-4 items-center">
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
                     </div>
-                    <div class="slide">
-                        <div class="slide_container">
-                            <div class="item">
-                                <img src="/assets/images/nach/barhat.png" alt="">
-                                <p>Красный бархат</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/medovik.png" alt="">
-                                <p>Медовик</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/barhat.png" alt="">
-                                <p>Красный бархат</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/snikers.png" alt="">
-                                <p>Сникерс</p>
-                            </div>
-                            <div class="item">
-                                <img src="/assets/images/nach/chokolade.png" alt="">
-                                <p>Шоколад-вишня</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="navigation">
-                    <label for="r1" class="bar"></label>
-                    <label for="r2" class="bar"></label>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="how_me_work" class="h-full">
+    <section id="how_me_work" class="h-full pt-14 pb-12">
         <div class="wrapper p-4">
-            <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Как мы работаем?</p>
-            <div class="how_me_work_content w-full mt-5 flex justify-between">
-                <div class="work_list flex w-full flex-col">
-                    <div class="max-w-full flex flex-row">
+            <div class="how_me_work_content w-full flex justify-between">
+                <div class="flex w-3/5 flex-col md:w-full">
+                    <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Как мы работаем?</p>
+                    <div class="max-w-full flex flex-row mt-6 gap-5 lg:mt-0 md:gap-3 ">
                         <div class="flex flex-col w-2/4 p-2">
-                            <div class="flex flex-row items-center">
-                                <p class="h-auto w-10 text-3xl items-center p-0 font-semibold">1</p>
-                                <p class="title_item">Заказ товара</p>
-                            </div>
-                            <p class="item_description">Выберите понравившийся десерт или торт из каталога, сообщите нам
-                                название торта, желаемую начинку а также вес, через форму на сайте или по телефону..</p>
+                            <p class="w-full text-5xl font-semibold test lg:text-4xl md:text-3xl">01.</p>
+                            <p class="text-lg mt-3 font-semibold lg:text-base md:text-base ">Заказ товара</p>
+                            <p class="mt-1 text-justify lg:text-sm md:text-sm">Выберите понравившийся десерт или торт из
+                                каталога, сообщите нам
+                                название торта, желаемую начинку а также вес, через форму на сайте или по телефону.</p>
                         </div>
-                        <div class="item_work_list">
-                            <div class="item_work_title">
-                                <p class="round_number">2</p>
-                                <p class="title_item">Подтвержение товара</p>
-                            </div>
-                            <p class="item_description">Мы свяжемся с вами для уточнения деталей торта, доставки и
+                        <div class="flex flex-col w-2/4 p-2">
+                            <p class="w-full text-5xl font-semibold test lg:text-4xl md:text-3xl">02.</p>
+                            <p class="text-lg mt-3 font-semibold lg:text-base md:text-base">Подтвержение товара</p>
+                            <p class="mt-1 text-justify lg:text-sm md:text-sm">Мы свяжемся с вами для уточнения деталей
+                                торта, доставки и
                                 оплаты. Заявка на торт на заказ принимается только при 50% предоплате.</p>
                         </div>
                     </div>
-                    <div class="how_work_row2">
-                        <div class="item_work_list">
-                            <div class="item_work_title">
-                                <p class="round_number">3</p>
-                                <p class="title_item">Доставка или самовывоз</p>
-                            </div>
-
-                            <p class="item_description">Мы доставим торт в удобное для вас время. Также можете получить
+                    <div class="max-w-full flex flex-row mt-6 gap-5 lg:mt-0 md:gap-3">
+                        <div class="flex flex-col w-2/4 p-2">
+                            <p class="w-full text-5xl font-semibold test lg:text-4xl md:text-3xl">03.</p>
+                            <p class="text-lg mt-3 font-semibold lg:text-base md:text-base">Доставка или самовывоз</p>
+                            <p class="mt-1 text-justify lg:text-sm md:text-sm">Мы доставим торт в удобное для вас время.
+                                Также можете получить
                                 заказ самовывозом.</p>
                         </div>
-                        <div class="item_work_list">
-                            <div class="item_work_title">
-                                <p class="round_number">4</p>
-                                <p class="title_item">Получение товара</p>
-                            </div>
-                            <p class="item_description">Получайте ваш заказ в указанные сроки и наслаждайтесь вкуснейшим
+                        <div class="flex flex-col w-2/4 p-2">
+                            <p class="w-full text-5xl font-semibold test lg:text-4xl md:text-3xl">04.</p>
+                            <p class="text-lg mt-3 font-semibold lg:text-base md:text-base">Получение товара</p>
+                            <p class="mt-1 text-justify lg:text-sm md:text-sm">Получайте ваш заказ в указанные сроки и
+                                наслаждайтесь вкуснейшим
                                 тортом или десертом.</p>
                         </div>
                     </div>
                 </div>
-                <div class="how_me_work_img">
-                    <img src="/assets/images/fon/testFonWork.png" alt="">
+                <div class="photo_title w-2/5 h-auto flex justify-center overflow-hidden md:hidden">
+                    <img src="/assets/images/fon/photoHeader.png" class="w-5/6 bg-gray-200 h-auto block p-6 lg:p-4"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -437,11 +486,92 @@
         </div>
     </section>
 
-    <section id="our_work">
-        <div class="wrapper">
+    <section id="photo_gallery" class="pt-6 mb-0">
+        <div class="wrapper pt-4">
             <p class="font-semibold text-4xl text-center md:text-3xl sm:text-2xl">Посмотрите примеры выполненных работ
             </p>
-            <p class="title_section_details">Фото проектов из нашего инстаграмма</p>
+            <p class="w-full text-lg text-center mt-2">Фото проектов из нашего инстаграмма</p>
+            <div class="gallery mt-3">
+                <div class="flex flex-col w-1/4">
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake1.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake2.png"
+                            class="gallery__image h-full">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake6.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+                </div>
+
+                <div class="flex flex-col w-1/4">
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake7.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake12.png"
+                            class="gallery__image ">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake3.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+                </div>
+
+                <div class="flex flex-col w-1/4">
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake4.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake9.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake10.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+                </div>
+
+                <div class="flex flex-col w-1/4">
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake11.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake8.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+
+                    <figure class="gallery__thumb">
+                        <img src="/assets/images/cake/gallery/cake5.png"
+                            class="gallery__image">
+                    </figure>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -494,7 +624,6 @@
             </nav>
         </div>
     </footer>
-
     <!-- <a class="btn btn-primary btn-up" href="#header"><img src="/assets/images/icons/go_up.png" alt="go up"></a> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.js"></script>

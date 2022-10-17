@@ -29,6 +29,9 @@
         text-decoration: none;
         color: var(--color-main-text);
     }
+    ul {
+        list-style: none;
+    }
     footer{
         max-width: 100%;
         display: block;
@@ -38,7 +41,7 @@
 
 @layer components {
     .wrapper {
-        @apply max-w-[1200px] m-auto p-1
+        @apply max-w-[1200px] m-auto pr-2 pl-2
     }
 }
 
@@ -128,13 +131,10 @@
 
 /*--------------------------ABOUT ME--------------------*/
 
-
-#about_me_content {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+#about_me{
+    background-color: #f7f7f7;
 }
+
 
 p.round {
     width: 75px;
@@ -227,144 +227,167 @@ p.price {
     margin: auto;
     }
 
-/*-------DELIMETR------------*/
-.delimetr {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+    .descr{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        color: #f5f5f5;
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        transition: all .5s;
+        display: block;
+        z-index: 3;
+    }
+    
+    
+    div.descr_card:hover .descr{
+        opacity: 1;
+    }
+    
+    div.descr_card:hover .img{
+        transform: scale(1.05);
+    
+    }
+    
+    div.descr_card .img {
+        transition: all .4s ease;
+        z-index: 2;
+    }
 
 /*----------slider-----------------*/
 
-.navigation {
+#fillings {
+    background-color: #f5f5f5;
+}
+
+.slide-container{
     width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .swiper-navBtn{
+    color: #87a97b;
+    transition: color 0.3s ease;
+  }
+
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 14px;
+  }
+  .swiper-button-next{
+    position: relative;
+    right: 0;
+  }
+  .swiper-button-prev{
+    position: relative;
+    left: 0;
+  }
+
+  .swiper-pagination {
+    max-width: 130px;
 }
 
-.slider {
-    overflow: hidden;
+.swiper-button-next, .swiper-button-prev {
+    width: auto;
+    height: auto;
+    margin-top: 0;
 }
 
-.bar {
-    height: 8px;
-    width: 30px;
-    margin: 6px;
-    cursor: pointer;
-    background-color: #3c3c3c;
-    opacity: .5;
-    border-radius: 10px;
-    transition: all .4s ease;
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal{
+    position: relative;
+    background: #cfcdcd;
+
 }
 
-.bar:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
-input[name="r"] {
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #87a97b;
     position: absolute;
-    visibility: hidden;
-}
-
-
-.sliders {
-    width: 200%;
-    height: 100%;
-    display: flex;
-}
-
-
-
-.slide {
-    width: 50%;
-    transition: all .6s ease;
-}
-
-.slide p {
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
 }
 
-#r1:checked~.s1 {
-    margin-left: 0;
-}
 
-#r2:checked~.s1 {
-    margin-left: -50%;
-}
-
-.slide_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
 /*------------HOW ME WORK-------------*/
 
-.work_list p.title_for_section {
-    margin: 0;
+#how_me_work {
+    background-color: #f7f7f7;
 }
 
-.how_me_work_img {
-    width: 50%;
+p.test{
+    border-bottom: 2px solid #cfcdcd;
+    color: #87a97b;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-.work_list {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+p.test:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom: 2px solid #87a97b;
+    width: 20%;
+  }
+
+/*--------------photo_gallery-----------------------*/
+
+#photo_gallery {
+    background-color: #f5f5f5;
+}
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
 }
 
-.item_work_title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+.gallery__image:hover {
+        transform: scale(1.1);
+	}
 
-.how_work_row2 {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
+.gallery__thumb {
+	position: relative;	
+    margin: 2px;
+	overflow: hidden;
 }
-
-.item_work_list {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 10px;
+	
+.gallery__image {
+	display: block;
+	width: 100%;
+	transition: .3s;
+    overflow: hidden;
 }
-
-.item_work_title p.title_item {
-    margin: 0 0 0 10px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.item_work_title p.round_number {
-    margin: 0;
-    width: 50px;
-    height: auto;
-    font-weight: 600;
-    font-size: 28px;
-    border: 2px solid var(--color-lavender);
-    border-radius: 50%;
-    text-align: center;
-    padding: 0;
+img.gallery__image {
+	width: initial;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*--------------COMMENTS-----------------------*/
 #comments {
-    background-image: url(/assets/images/fon/testrandomFon.jpg);
-    background-repeat: no-repeat;
-    height: 750px;
+    height: auto;
     width: 100%;
     background-size: cover;
 }
 
 #comments .wrapper {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .comments_content {
@@ -376,16 +399,10 @@ input[name="r"] {
     overflow: hidden;
 }
 
-.swiper {
-    width: 100%;
-    padding-bottom: 50px;
-}
-
 .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 50%;
-    background: #ffffff;
 }
 
 .testimonialBox {
@@ -429,17 +446,6 @@ input[name="r"] {
     border-radius: 50%;
 }
 
-.title_section_details {
-    width: 100%;
-    text-align: center;
-    color: #4f4d4d;
-    padding: 0;
-    margin: 0;
-}
-
-#our_work p.title_for_section {
-    margin: 10px 0 10px 0;
-}
 
 textarea {
     width: 100%;
@@ -464,9 +470,8 @@ textarea {
 }
 
 #application_form {
-    background-image: url(/assets/images/fon/testrandomFon.jpg);
-    background-repeat: no-repeat;
-    height: 800px;
+    background: #ffffff;
+    height: auto;
     width: 100%;
     background-size: cover;
 }

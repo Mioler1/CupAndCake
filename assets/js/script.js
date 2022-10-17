@@ -28,6 +28,41 @@ function app(){
         })
     })
 
+    const swiper2 = new Swiper(".slide-content", {
+        slidesPerView: 5,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "progressbar",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    
+        breakpoints:{
+            0: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            992: {
+                slidesPerView: 5,
+            },
+        },
+      });
+
+
     const swiper = new Swiper('.swiper', {
         effect: 'coverflow',
         grabCursor: true,
